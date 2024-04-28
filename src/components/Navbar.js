@@ -6,7 +6,7 @@ export class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a className="navbar-brand" href="/">
-            Navbar
+            SparkPress
           </a>
           <button
             className="navbar-toggler"
@@ -29,7 +29,7 @@ export class Navbar extends Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/">
-                  Link
+                  About
                 </a>
               </li>
             </ul>

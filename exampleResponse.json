@@ -1,0 +1,266 @@
+{
+  "status": "ok",
+  "totalResults": 23,
+  "articles": [
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Reuters",
+      "title": "Abbas, international leaders to hold Gaza talks in Riyadh this week",
+      "description": "Palestinian President Mahmoud Abbas and several international officials will be in Riyadh this week for talks aimed at pushing for a peace agreement in Gaza to be held on the sidelines of a World Economic Forum meeting, the WEF's president said on Saturday.",
+      "url": "https://www.reuters.com/world/middle-east/abbas-international-leaders-hold-gaza-talks-riyadh-this-week-2024-04-27/",
+      "urlToImage": "https://www.reuters.com/resizer/v2/Q2URQIPRYNIHDK2JK2JVME5CXA.jpg?auth=86daa58da856277d2208b757fb051c1a804ac9217b8cad1f531f780d263a60a6&height=1005&width=1920&quality=80&smart=true",
+      "publishedAt": "2024-04-27T09:43:21Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "bbc-sport",
+        "name": "BBC Sport"
+      },
+      "author": null,
+      "title": "World Snooker Championship 2024 LIVE: Judd Trump vs Tom Ford & Shaun Murphy vs Stephen Maguire",
+      "description": "Watch live BBC coverage of the World Snooker Championship 2024 at the Crucible Theatre in Sheffield.",
+      "url": "http://www.bbc.co.uk/sport/snooker/live/cxwvlvk3vjxt",
+      "urlToImage": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/sport/images/metadata/poster-1024x576.png",
+      "publishedAt": "2024-04-27T09:07:18.1172377Z",
+      "content": "All times are BST and subject to change\r\nBBC iPlayer\r\nSaturday 27th April\r\nDay Session (10:00 18:00) coverage available via BBC One, BBC\r\nTwo, Red Button, BBC IPlayer &amp; the BBC Sport website.\r\nEv… [+2385 chars]"
+    },
+    {
+      "source": {
+        "id": "cbc-news",
+        "name": "CBC News"
+      },
+      "author": "CBC News",
+      "title": "The world is struggling with plastic pollution — Canada is no exception | CBC News",
+      "description": "Canada is hosting 176 countries in Ottawa for a conference aimed at making progress toward a global treaty on plastic waste.",
+      "url": "http://www.cbc.ca/news/politics/plastics-convention-ottawa-debate-1.7185931",
+      "urlToImage": "https://i.cbc.ca/1.7179154.1713569400!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/el-salvador-plastics.JPG",
+      "publishedAt": "2024-04-27T08:07:21.0512792Z",
+      "content": "As thousands of delegates meet in Ottawa this week to work toward a global treaty on curbing plastic waste, the experts say the world may never get a better opportunity to confront the problem.\r\nIn a… [+4839 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news-au",
+        "name": "ABC News (AU)"
+      },
+      "author": "Keane Bourke",
+      "title": "Shareholder rejection of Woodside's climate plan sends message to company, but can it do anything more consequential?",
+      "description": "Climate activists want Woodside leaders to feel some consequence for what they say the company is inflicting on the world, but investor activists have a slightly different point of view.",
+      "url": "https://www.abc.net.au/news/2024-04-27/woodside-agm-analysis-keane-bourke/103772184",
+      "urlToImage": "https://live-production.wcms.abc-cdn.net.au/dfd4f87c805b0dfd8aaaad6ecdfaa1b5?impolicy=wcms_watermark_news&cropH=2772&cropW=4928&xPos=0&yPos=254&width=862&height=485&imformat=generic",
+      "publishedAt": "2024-04-27T00:03:33Z",
+      "content": "The nation's biggest oil and gas company is in an uncomfortable position.\r\nAnd not as one shareholder tried to raise at its annual general meeting this week because it sponsors the Dockers rather tha… [+7689 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Haje Jan Kamps",
+      "title": "So are we banning TikTok or what? Also: Can an influencer really tank an $800M company? | TechCrunch",
+      "description": "Welcome to Startups Weekly — your weekly recap of everything you can’t miss from the world of startups. Sign up here to get it in your inbox every Friday.",
+      "url": "https://techcrunch.com/2024/04/26/ixnay-on-the-tiktok-and-the-power-of-influencers/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/09/GettyImages-1243334500-1.jpg?resize=1200,798",
+      "publishedAt": "2024-04-26T16:59:32Z",
+      "content": "Welcome to Startups Weekly your weekly recap of everything you cant miss from the world of startups. Sign up here to get it in your inbox every Friday.\r\nTicktock, TikTok: It’s been a wild week for Ti… [+9312 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news-au",
+        "name": "ABC News (AU)"
+      },
+      "author": "Sonia Nair",
+      "title": "The Fall Guy starring Ryan Gosling and Emily Blunt is an entertaining ride through the world of action movies",
+      "description": "Ryan Gosling and Emily Blunt star in an action movie that's also an ode to the art of filmmaking, a musical nostalgia-fest, and a love story.",
+      "url": "https://www.abc.net.au/news/2024-04-26/the-fall-guy-review-ryan-gosling-emily-blunt/103765612",
+      "urlToImage": "https://live-production.wcms.abc-cdn.net.au/3eb4376b6721ac1d030bc34f89b3ffad?impolicy=wcms_watermark_news&cropH=2052&cropW=3648&xPos=524&yPos=65&width=862&height=485&imformat=generic",
+      "publishedAt": "2024-04-26T02:02:46Z",
+      "content": "The double-edged sword of being a stunt double the extreme visibility of the death-defying manoeuvres they perform to audiences of millions, the dearth of acknowledgement and the invisibility of thei… [+4698 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news-au",
+        "name": "ABC News (AU)"
+      },
+      "author": "Kate Ainsworth",
+      "title": "Australia's average tax rate increase tops OECD countries due to bracket creep and end of tax offset",
+      "description": "Data from the OECD shows Australia recorded the biggest increase to average tax rates in the developed world last year due to bracket creep and the end of a tax offset, but a separate report finds Australia is still a relatively low-taxing nation.",
+      "url": "https://www.abc.net.au/news/2024-04-26/australia-income-tax-rate-changes-oecd-taxing-wages/103769612",
+      "urlToImage": "https://live-production.wcms.abc-cdn.net.au/780787103bedfcc5086d3b907eb16a25?impolicy=wcms_watermark_news&cropH=1689&cropW=3000&xPos=0&yPos=308&width=862&height=485&imformat=generic",
+      "publishedAt": "2024-04-25T23:39:03Z",
+      "content": "<ul><li>In short: Australia's average income tax rate increased by 7.6 per cent in 2023, the largest out of any developed country in the world.</li><li>Although Australians spent 24.9 per cent of the… [+7235 chars]"
+    },
+    {
+      "source": {
+        "id": "polygon",
+        "name": "Polygon"
+      },
+      "author": "Charlie Hall",
+      "title": "Wingspan pubisher’s next board game is inspired by Zelda, Elden Ring",
+      "description": "Vantage is an open-world science fiction roguelike board game unlike anything seen before on a tabletop. Expect it in 2025.",
+      "url": "https://www.polygon.com/24140156/vantage-stonemaier-games-announcement-release-date-price",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/OJYI_IHJBLO46x8F3vfHbLI0ko4=/0x160:1976x1195/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25417909/vantage_cover_art.jpg",
+      "publishedAt": "2024-04-25T17:00:58Z",
+      "content": "Jamey Stegmaier, co-founder of Stonemaier Games, has made an indelible mark on board gaming since he entered the space in 2011. Not only has he designed and published incredible strategy games like S… [+3203 chars]"
+    },
+    {
+      "source": {
+        "id": "financial-post",
+        "name": "Financial Post"
+      },
+      "author": null,
+      "title": "'Worst of both worlds': Markets shudder as U.S. GDP slows, inflation reading spikes",
+      "description": "Markets pulled back across the board after U.S. GDP slowed in the first quarter, but a closely watched inflation reading rose. Keep reading.",
+      "url": "https://financialpost.com/news/economy/u-s-gdp-slowed-first-quarter",
+      "urlToImage": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2024/04/gross-domestic-product.jpg",
+      "publishedAt": "2024-04-25T16:07:22.212926Z",
+      "content": "Wall Street was rattled by economic figures that showed exactly what stock traders did not want to hear: a significant slowdown in the worlds largest economy and persistent inflation pressures.\r\nStoc… [+2830 chars]"
+    },
+    {
+      "source": {
+        "id": "financial-post",
+        "name": "Financial Post"
+      },
+      "author": "Bloomberg News",
+      "title": "BHP's US$39-billion bid for Anglo American would create world's top copper producer",
+      "description": "BHP Group has proposed a takeover of Anglo American to create the world’s top copper producer while sparking an industry shakeup. Read on.",
+      "url": "https://financialpost.com/commodities/mining/bhp-anglo-american-create-top-copper-producer",
+      "urlToImage": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2024/04/bhp-anglo-gs0425.png",
+      "publishedAt": "2024-04-25T12:36:19Z",
+      "content": "Sparks mining industrys biggest shakeup in over a decade\r\nAuthor of the article:\r\nAnglo American's Sishen Iron Ore Mine, in South Africa. BHP's bid for the miner has sparked the industrys biggest sha… [+8471 chars]"
+    },
+    {
+      "source": {
+        "id": "recode",
+        "name": "Recode"
+      },
+      "author": "Nicole Narea",
+      "title": "TruthSocial made Trump billions. Will its skyrocketing stock price solve his financial woes?",
+      "description": "Trump’s social network has made him one of the richest people in the world — at least on paper.",
+      "url": "https://www.vox.com/politics/2024/3/29/24115881/truthsocial-trump-djt-stock-share-price",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/4d64JNTmrvdi0Q3OuEWDfa8sl-A=/0x453:4000x2547/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25362276/2111709254.jpg",
+      "publishedAt": "2024-03-29T21:35:00Z",
+      "content": "Former President Donald Trumps net worth has skyrocketed to about $7.5 billion since Trump Media, the parent company for his social network Truth Social, went public earlier this week.\r\nThe question … [+5660 chars]"
+    },
+    {
+      "source": {
+        "id": "the-next-web",
+        "name": "The Next Web"
+      },
+      "author": "Thomas Macaulay",
+      "title": "A metaverse network plots an escape from Meta's 'walled gardens'",
+      "description": "Improbable has launched a \"network of metaverses\" that eyes connected virtual worlds outside Meta's 'walled gardens'",
+      "url": "http://thenextweb.com/news/improbable-metaverse-network-m2-connected-virtual-worlds-outside-metas-walled-gardens",
+      "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F06%2FUntitled-design-7-1.jpg&signature=d39f71ac2f38f0ce47cf0df5a49c588d",
+      "publishedAt": "2023-06-21T11:54:26Z",
+      "content": "Two years after Mark Zuckerberg launchedit into orbit, the metaverse is crashing back to Earth. As the hype sparked by Facebooks rebrand fades amid jaw-dropping losses, risible selfies, and the gener… [+6159 chars]"
+    },
+    {
+      "source": {
+        "id": "recode",
+        "name": "Recode"
+      },
+      "author": "Vox Staff",
+      "title": "What artificial intelligence is, and how it’s changing our world",
+      "description": "Understand how generative AI tools, like ChatGPT, Stable Diffusion, and DALL-E, are already shaping everything — from text and image generation to how we live and work.",
+      "url": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/ghpMKgJICiZk9Bi_PGJ8LlFP33M=/0x566:6000x3707/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24618050/GettyImages_1483829076.jpg",
+      "publishedAt": "2023-04-28T18:15:39Z",
+      "content": "Artificial intelligence is suddenly everywhere or at least, thats what it seems like to us at Vox. Even in its current form and with its limitations, the tech is already shaping everything from text … [+525 chars]"
+    },
+    {
+      "source": {
+        "id": "the-irish-times",
+        "name": "The Irish Times"
+      },
+      "author": "Ed Power",
+      "title": "Bear Grylls Meets President Zelenskyy review: TV action man eager to set the world to rights",
+      "description": "In this Channel 4 documentary, Grylls is very good at being earnest and is genuinely moved by the fortitude of Ukraine",
+      "url": "https://www.irishtimes.com/culture/tv-radio/2023/03/29/bear-grylls-meets-president-zelenskyy-review-tv-action-man-eager-to-set-the-world-to-rights/",
+      "urlToImage": "https://www.irishtimes.com/resizer/6p88mds4ABkJsWVTO8rznsDX2_g=/1200x630/filters:format(jpg):quality(70):focal(1350x510:1360x520)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/67CBWCZ4IRHTBOYE6PRS4STLFU.jpg",
+      "publishedAt": "2023-03-29T12:56:56Z",
+      "content": "Bear Grylls bounces into Ukraine eager to set the world to rights. The TV action man is travelling across an active war theatre to meet the Ukrainian president Volodymyr Zelenskiy and has cultivated … [+2929 chars]"
+    },
+    {
+      "source": {
+        "id": "the-globe-and-mail",
+        "name": "The Globe And Mail"
+      },
+      "author": "Erica Alini",
+      "title": "‘It’s a dog eat dog world’ as housing cool-down helps ignite rental market wars",
+      "description": "Rents in many parts of Canada are nearing or surging past prepandemic records, just as property values and home resale transactions declined for the second consecutive month in May",
+      "url": "https://www.theglobeandmail.com/investing/personal-finance/household-finances/article-its-a-dog-eat-dog-world-as-housing-cool-down-helps-ignite-rental/",
+      "urlToImage": "https://www.theglobeandmail.com/resizer/k4SzzUz-fDXLTPrBSHk8c8OwZCs=/1200x801/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/tgam/OUZ33GZN4VBJZCAFM4TXYDFKAI.JPG",
+      "publishedAt": "2022-06-16T09:00:00Z",
+      "content": "A sign advertising a house for rent in Ottawa, Ont., on May 16.Spencer Colby/The Globe and Mail\r\nJust as Canadas home sales and prices cool off, the rental market is catching fire.\r\nRents in many par… [+4720 chars]"
+    },
+    {
+      "source": {
+        "id": "talksport",
+        "name": "TalkSport"
+      },
+      "author": "Cameron Temple",
+      "title": "Adrien Broner has two-word response to Conor Benn calling him out for a fight as ‘The Destroyer’ gears up f...",
+      "description": "Adrien Broner had some choice words for Conor Benn after the young Brit called him out. The four-weight world champion, who is now 32 years old, has not fought since February of last year when he b…",
+      "url": "https://talksport.com/sport/1084110/adrien-broner-responds-to-conor-benn-call-out/",
+      "urlToImage": "https://talksport.com/wp-content/uploads/sites/5/2022/04/TALKSPORT-BENN-BRONER.jpg?strip=all&quality=100&w=1500&h=1000&crop=1",
+      "publishedAt": "2022-04-12T16:00:00Z",
+      "content": "Adrien Broner had some choice words for Conor Benn after the young Brit called him out. \r\nThe four-weight world champion, who is now 32 years old, has not fought since February of last year when he b… [+2676 chars]"
+    },
+    {
+      "source": {
+        "id": "the-lad-bible",
+        "name": "The Lad Bible"
+      },
+      "author": null,
+      "title": "Latest News - Todays Breaking News Headlines & Exclusives | LADbible",
+      "description": "The latest breaking news from around the world on LADbible. Exclusive stories and the best coverage giving you the news as you want it.",
+      "url": "https://www.theladbible.com/news",
+      "urlToImage": null,
+      "publishedAt": "2021-06-16T09:22:43.3050014Z",
+      "content": "It's definitely worth a go, isn't it?"
+    },
+    {
+      "source": {
+        "id": "football-italia",
+        "name": "Football Italia"
+      },
+      "author": "Football Italia Staff",
+      "title": "Report: Allegri set to replace Zidane at Madrid",
+      "description": "Real Madrid will reportedly confirm Zinedine Zidane&rsquo;s exit next week, with Max Allegri lined up to succeed the World Cup winner.",
+      "url": "http://www.football-italia.net/171169/report-allegri-set-replace-zidane-madrid",
+      "urlToImage": "https://www.football-italia.net/sites/default/files/imagecache/main_photo/[type]/[nid]/Allegri-1811-smug-epa_2_8_7.jpg",
+      "publishedAt": "2021-05-25T01:00:00Z",
+      "content": "Real Madrid will reportedly confirm Zinedine Zidane’s exit next week, with Max Allegri lined up to succeed the World Cup winner.\r\nThe former Juventus coach has been linked with a move to the Spanish … [+671 chars]"
+    },
+    {
+      "source": {
+        "id": "national-geographic",
+        "name": "National Geographic"
+      },
+      "author": "Heather Greenwood Davis",
+      "title": "Families are leading a new wave in Black travel. Here’s why",
+      "description": "For many parents, showing their kids the world is about both the past and the future.",
+      "url": "https://www.nationalgeographic.com/travel/2021/02/the-importance-of-travel-for-black-families.html",
+      "urlToImage": "https://www.nationalgeographic.com/content/dam/travel/2021-digital/black-family-travel/black-family-travel-2.jpg",
+      "publishedAt": "2021-02-17T14:37:24.3073832Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "the-lad-bible",
+        "name": "The Lad Bible"
+      },
+      "author": null,
+      "title": "Breaking Entertainment News - Celebrity & Showbiz News | LADbible",
+      "description": "The latest entertainment news in the UK and worldwide on LADbible. We cover breaking celebrity news and showbiz stories. Check out our exclusives.",
+      "url": "https://www.theladbible.com/entertainment",
+      "urlToImage": null,
+      "publishedAt": "2020-06-18T14:07:50.1068606Z",
+      "content": "Netflix's new fantasy show, Cursed, will launch on 17 July"
+    }
+  ]
+}
