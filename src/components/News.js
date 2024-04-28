@@ -12,8 +12,7 @@ export class News extends Component {
   }
 
   async componentDidMount() {
-    let url =
-      "https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=1&pageSize=20";
+    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=1&pageSize=${this.props.numOfArticlesPerPage}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     console.log(parsedData);
@@ -26,11 +25,15 @@ export class News extends Component {
   handleNextClick = async () => {
     console.log("next");
 
-    if (Math.ceil(this.state.totalResults / 20) < this.state.page + 1) {
+    // here 12 are the number of articles per page
+    if (
+      Math.ceil(this.state.totalResults / this.props.numOfArticlesPerPage) <
+      this.state.page + 1
+    ) {
     } else {
       let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
         this.state.page + 1
-      }&pageSize=20`;
+      }&pageSize=${this.props.numOfArticlesPerPage}`;
       let data = await fetch(url);
       let parsedData = await data.json();
       console.log(parsedData);
@@ -46,7 +49,7 @@ export class News extends Component {
     console.log("prev");
     let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
       this.state.page - 1
-    }&pageSize=20`;
+    }&pageSize=${this.props.numOfArticlesPerPage}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     console.log(parsedData);
@@ -60,7 +63,9 @@ export class News extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="my-3">SparkPress - Top Headlines</h1>
+        <h1 style={{ paddingTop: "80px" }}>
+          SparkPress - <span style={{ color: "red" }}>Hot Topics</span>
+        </h1>
         <div className="row">
           {this.state.articles.map((element) => {
             return (
@@ -86,9 +91,14 @@ export class News extends Component {
           >
             &laquo; Previous
           </button>
+
+          {/* here 12 are the number of articles per page */}
           <button
             disabled={
-              Math.ceil(this.state.totalResults / 20) < this.state.page + 1
+              Math.ceil(
+                this.state.totalResults / this.props.numOfArticlesPerPage
+              ) <
+              this.state.page + 1
             }
             type="button"
             className="btn btn-dark my-2"

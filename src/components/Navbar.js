@@ -4,9 +4,11 @@ export class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <a className="navbar-brand" href="/">
-            SparkPress
+            <strong>
+              Spark<span style={{ color: "red" }}>Press</span>
+            </strong>
           </a>
           <button
             className="navbar-toggler"
