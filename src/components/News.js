@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NewsItem from "./NewsItem";
+import Spinner from "./Spinner";
 
 export class News extends Component {
   constructor() {
@@ -13,12 +14,14 @@ export class News extends Component {
 
   async componentDidMount() {
     let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=1&pageSize=${this.props.numOfArticlesPerPage}`;
+    this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
     console.log(parsedData);
     this.setState({
       articles: parsedData.articles,
       totalResults: parsedData.totalResults,
+      loading: false,
     });
   }
 
@@ -34,6 +37,7 @@ export class News extends Component {
       let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
         this.state.page + 1
       }&pageSize=${this.props.numOfArticlesPerPage}`;
+      this.setState({ loading: true });
       let data = await fetch(url);
       let parsedData = await data.json();
       console.log(parsedData);
@@ -41,6 +45,7 @@ export class News extends Component {
       this.setState({
         page: this.state.page + 1,
         articles: parsedData.articles,
+        loading: false,
       });
     }
   };
@@ -50,6 +55,7 @@ export class News extends Component {
     let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
       this.state.page - 1
     }&pageSize=${this.props.numOfArticlesPerPage}`;
+    this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
     console.log(parsedData);
@@ -57,6 +63,7 @@ export class News extends Component {
     this.setState({
       page: this.state.page - 1,
       articles: parsedData.articles,
+      loading: false,
     });
   };
 
@@ -66,7 +73,8 @@ export class News extends Component {
         <h1 style={{ paddingTop: "80px" }}>
           SparkPress - <span style={{ color: "red" }}>Hot Topics</span>
         </h1>
-        <div className="row">
+        {this.state.loading && <Spinner />}
+        <div className="row" style={{ paddingBottom: "60px" }}>
           {this.state.articles.map((element) => {
             return (
               <div className="col-md-4" key={element.url}>
@@ -82,7 +90,7 @@ export class News extends Component {
             );
           })}
         </div>
-        <div className="container d-flex justify-content-between">
+        <div className="container d-flex justify-content-between fixed-bottom">
           <button
             disabled={this.state.page <= 1}
             type="button"
