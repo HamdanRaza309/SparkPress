@@ -1,8 +1,21 @@
 import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
+import PropTypes from "prop-types";
 
 export class News extends Component {
+  static defaultProps = {
+    numOfArticlesPerPage: 9,
+    country: "in",
+    category: "general",
+  };
+
+  static propTypes = {
+    numOfArticlesPerPage: PropTypes.number,
+    country: PropTypes.string,
+    category: PropTypes.string,
+  };
+
   constructor() {
     super();
     this.state = {
@@ -13,7 +26,7 @@ export class News extends Component {
   }
 
   async componentDidMount() {
-    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=1&pageSize=${this.props.numOfArticlesPerPage}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=fcf68b97dc464134a44e26219988f53a&page=1&pageSize=${this.props.numOfArticlesPerPage}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -34,7 +47,11 @@ export class News extends Component {
       this.state.page + 1
     ) {
     } else {
-      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
+      let url = `https://newsapi.org/v2/top-headlines?country=${
+        this.props.country
+      }&category=${
+        this.props.category
+      }&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
         this.state.page + 1
       }&pageSize=${this.props.numOfArticlesPerPage}`;
       this.setState({ loading: true });
@@ -52,7 +69,11 @@ export class News extends Component {
 
   handlePrevClick = async () => {
     console.log("prev");
-    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
+    let url = `https://newsapi.org/v2/top-headlines?country=${
+      this.props.country
+    }&category=${
+      this.props.category
+    }&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
       this.state.page - 1
     }&pageSize=${this.props.numOfArticlesPerPage}`;
     this.setState({ loading: true });
@@ -81,7 +102,7 @@ export class News extends Component {
                 <NewsItem
                   title={element.title ? element.title.slice(0, 40) : ""}
                   description={
-                    element.description ? element.description.slice(0, 80) : ""
+                    element.description ? element.description.slice(0, 50) : ""
                   }
                   imageUrl={element.urlToImage}
                   newsUrl={element.url}

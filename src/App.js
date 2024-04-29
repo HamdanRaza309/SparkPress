@@ -7,7 +7,7 @@ export default class Hi extends Component {
     return (
       <div>
         <Navbar />
-        <News numOfArticlesPerPage={9} />
+        <News numOfArticlesPerPage={9} country="in" category="sports" />
       </div>
     );
   }
