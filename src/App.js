@@ -4,6 +4,7 @@ import News from "./components/News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default class App extends Component {
+  numOfArticlesPerPage = 12;
   render() {
     return (
       <div>
@@ -16,7 +17,7 @@ export default class App extends Component {
               element={
                 <News
                   key="general"
-                  numOfArticlesPerPage={9}
+                  numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
                   category="general"
                 />
@@ -28,7 +29,7 @@ export default class App extends Component {
               element={
                 <News
                   key="business"
-                  numOfArticlesPerPage={9}
+                  numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
                   category="business"
                 />
@@ -40,7 +41,7 @@ export default class App extends Component {
               element={
                 <News
                   key="entertainment"
-                  numOfArticlesPerPage={9}
+                  numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
                   category="entertainment"
                 />
@@ -52,7 +53,7 @@ export default class App extends Component {
               element={
                 <News
                   key="health"
-                  numOfArticlesPerPage={9}
+                  numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
                   category="health"
                 />
@@ -64,7 +65,7 @@ export default class App extends Component {
               element={
                 <News
                   key="science"
-                  numOfArticlesPerPage={9}
+                  numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
                   category="science"
                 />
@@ -76,7 +77,7 @@ export default class App extends Component {
               element={
                 <News
                   key="sports"
-                  numOfArticlesPerPage={9}
+                  numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
                   category="sports"
                 />
@@ -88,7 +89,7 @@ export default class App extends Component {
               element={
                 <News
                   key="technology"
-                  numOfArticlesPerPage={9}
+                  numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
                   category="technology"
                 />

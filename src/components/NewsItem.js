@@ -5,7 +5,10 @@ export class NewsItem extends Component {
     let { title, description, imageUrl, newsUrl, author, date, source } = this.props;
     return (
       <div>
-        <div className="card">
+        <div className="card" style={{
+          border: "1px solid #c3c3c3",
+          background: "#f9f9f9"
+        }}>
           <div
             style={{
               width: "100%",
