@@ -47,13 +47,10 @@ export class News extends Component {
       this.state.page + 1
     ) {
     } else {
-      let url = `https://newsapi.org/v2/top-headlines?country=${
-        this.props.country
-      }&category=${
-        this.props.category
-      }&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
-        this.state.page + 1
-      }&pageSize=${this.props.numOfArticlesPerPage}`;
+      let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country
+        }&category=${this.props.category
+        }&apiKey=fcf68b97dc464134a44e26219988f53a&page=${this.state.page + 1
+        }&pageSize=${this.props.numOfArticlesPerPage}`;
       this.setState({ loading: true });
       let data = await fetch(url);
       let parsedData = await data.json();
@@ -69,13 +66,10 @@ export class News extends Component {
 
   handlePrevClick = async () => {
     console.log("prev");
-    let url = `https://newsapi.org/v2/top-headlines?country=${
-      this.props.country
-    }&category=${
-      this.props.category
-    }&apiKey=fcf68b97dc464134a44e26219988f53a&page=${
-      this.state.page - 1
-    }&pageSize=${this.props.numOfArticlesPerPage}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country
+      }&category=${this.props.category
+      }&apiKey=fcf68b97dc464134a44e26219988f53a&page=${this.state.page - 1
+      }&pageSize=${this.props.numOfArticlesPerPage}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -91,7 +85,7 @@ export class News extends Component {
   render() {
     return (
       <div className="container">
-        <h1 style={{ paddingTop: "80px" }}>
+        <h1 style={{ padding: "80px 0px 20px 0px" }}>
           SparkPress - <span style={{ color: "red" }}>Hot Topics</span>
         </h1>
         {this.state.loading && <Spinner />}
@@ -106,6 +100,9 @@ export class News extends Component {
                   }
                   imageUrl={element.urlToImage}
                   newsUrl={element.url}
+                  author={element.author}
+                  date={element.publishedAt}
+                  source={element.source.name}
                 />
               </div>
             );

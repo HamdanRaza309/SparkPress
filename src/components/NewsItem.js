@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class NewsItem extends Component {
   render() {
-    let { title, description, imageUrl, newsUrl } = this.props;
+    let { title, description, imageUrl, newsUrl, author, date, source } = this.props;
     return (
       <div>
         <div className="card">
@@ -28,14 +28,35 @@ export class NewsItem extends Component {
             />
           </div>
           <div className="card-body">
-            <h5 className="card-title">{title}...</h5>
+            <h5 className="card-title">
+              {title}...
+            </h5>
+            <h4>
+              <span className="badge badge-success">{source}</span>
+            </h4>
             <p className="card-text">
               {description
                 ? description
                 : "Unfortunately, Description is unavailable. Click on read more."}
               ...
             </p>
-            <a href={newsUrl} target="blank" className="btn btn-sm btn-primary">
+            <p className="card-text">
+              <small className="text-muted">
+                By {author ? author : "Unknown"} on{" "}
+                {new Date(date).toISOString().split("T")[0]}
+              </small>
+            </p>
+            {/* <p className="card-text">
+              <small className="text-muted">
+                By {author ? author : "Unknown"} on{" "}
+                {new Date(date)
+                  .toISOString()
+                  .replace(/T/, " ")
+                  .replace(/\..+/, "")}
+              </small>
+            </p> */}
+
+            <a href={newsUrl} target="blank" className="btn btn-sm btn-dark">
               Read More
             </a>
           </div>
