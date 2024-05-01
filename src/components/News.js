@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
-
+import InfiniteScroll from "react-infinite-scroll-component";
 export class News extends Component {
   static defaultProps = {
     numOfArticlesPerPage: 9,
@@ -16,13 +16,18 @@ export class News extends Component {
     category: PropTypes.string,
   };
 
-  constructor() {
-    super();
+  capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  constructor(props) {
+    super(props);
     this.state = {
       articles: [],
       loading: false,
       page: 1,
     };
+    document.title = `${this.capitalizeFirstLetter(this.props.category)} - SparkPress - Stay informed`
   }
 
   async updateNews() {
@@ -41,74 +46,56 @@ export class News extends Component {
     this.updateNews();
   }
 
-  handleNextClick = async () => {
-    console.log("next");
+  fetchMoreData = async () => {
     this.setState({
-      page: this.state.page + 1,
-    })
-    this.updateNews();
-  };
-
-  handlePrevClick = async () => {
-    console.log("prev");
+      page: this.state.page + 1
+    });
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=fcf68b97dc464134a44e26219988f53a&page=${this.state.page}&pageSize=${this.props.numOfArticlesPerPage}`;
+    this.setState({ loading: true });
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    console.log(parsedData);
     this.setState({
-      page: this.state.page - 1,
-    })
-    this.updateNews();
+      articles: this.state.articles.concat(parsedData.articles),
+      totalResults: parsedData.totalResults,
+      loading: false,
+    });
   };
 
   render() {
     return (
       <div className="container">
         <h1 style={{ padding: "80px 0px 20px 0px" }}>
-          SparkPress - <span style={{ color: "red" }}>Hot Topics</span>
+          SparkPress - <span style={{ color: "red" }}>{this.capitalizeFirstLetter(this.props.category)} Hot Topics</span>
         </h1>
-        {this.state.loading && <Spinner />}
-        <div className="row" style={{ paddingBottom: "60px" }}>
-          {this.state.articles.map((element) => {
-            return (
-              <div className="col-md-4 my-3" key={element.url}>
-                <NewsItem
-                  title={element.title ? element.title.slice(0, 40) : ""}
-                  description={
-                    element.description ? element.description.slice(0, 50) : ""
-                  }
-                  imageUrl={element.urlToImage}
-                  newsUrl={element.url}
-                  author={element.author}
-                  date={element.publishedAt}
-                  source={element.source.name}
-                />
-              </div>
-            );
-          })}
-        </div>
-        <div className="container d-flex justify-content-between fixed-bottom">
-          <button
-            disabled={this.state.page <= 1}
-            type="button"
-            className="btn btn-dark my-2"
-            onClick={this.handlePrevClick}
-          >
-            &laquo; Previous
-          </button>
-
-          {/* here 12 are the number of articles per page */}
-          <button
-            disabled={
-              Math.ceil(
-                this.state.totalResults / this.props.numOfArticlesPerPage
-              ) <
-              this.state.page + 1
-            }
-            type="button"
-            className="btn btn-dark my-2"
-            onClick={this.handleNextClick}
-          >
-            Next &raquo;
-          </button>
-        </div>
-      </div>
+        <InfiniteScroll
+          style={{ overflow: "hidden" }}
+          dataLength={this.state.articles.length}
+          next={this.fetchMoreData}
+          hasMore={this.state.articles.length !== this.state.totalResults}
+          loader={this.state.loading && <Spinner />}
+        >
+          <div className="row" style={{ paddingBottom: "60px" }}>
+            {this.state.articles.map((element, index) => {
+              return (
+                <div className="col-md-4 my-3" key={index}>
+                  <NewsItem
+                    title={element.title ? element.title.slice(0, 40) : ""}
+                    description={
+                      element.description ? element.description.slice(0, 50) : ""
+                    }
+                    imageUrl={element.urlToImage}
+                    newsUrl={element.url}
+                    author={element.author}
+                    date={element.publishedAt}
+                    source={element.source.name}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </InfiniteScroll>
+      </div >
     );
   }
 }
