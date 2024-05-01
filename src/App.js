@@ -2,20 +2,32 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import LoadingBar from 'react-top-loading-bar'
 export default class App extends Component {
   numOfArticlesPerPage = 12;
+
+  state = {
+    progress: 0
+  }
+
+  setProgress = (progress) => {
+    this.setState({ progress: progress })
+  }
   render() {
     return (
       <div>
         <Router>
+          <LoadingBar
+            color='#f11946'
+            progress={this.state.progress}
+          />
           <Navbar />
           <Routes>
             <Route
               exact
               path="/"
               element={
-                <News
+                <News setProgress={this.setProgress}
                   key="general"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -27,7 +39,7 @@ export default class App extends Component {
               exact
               path="/business"
               element={
-                <News
+                <News setProgress={this.setProgress}
                   key="business"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -39,7 +51,7 @@ export default class App extends Component {
               exact
               path="/entertainment"
               element={
-                <News
+                <News setProgress={this.setProgress}
                   key="entertainment"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -51,7 +63,7 @@ export default class App extends Component {
               exact
               path="/health"
               element={
-                <News
+                <News setProgress={this.setProgress}
                   key="health"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -63,7 +75,7 @@ export default class App extends Component {
               exact
               path="/science"
               element={
-                <News
+                <News setProgress={this.setProgress}
                   key="science"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -75,7 +87,7 @@ export default class App extends Component {
               exact
               path="/sports"
               element={
-                <News
+                <News setProgress={this.setProgress}
                   key="sports"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -87,7 +99,7 @@ export default class App extends Component {
               exact
               path="/technology"
               element={
-                <News
+                <News setProgress={this.setProgress}
                   key="technology"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
