@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
 export default class App extends Component {
   numOfArticlesPerPage = 12;
-
+  // apiKey = 'fcf68b97dc464134a44e26219988f53a';
+  apiKey = process.env.REACT_APP_NEWS_APIKEY;
   state = {
     progress: 0
   }
@@ -27,7 +28,7 @@ export default class App extends Component {
               exact
               path="/"
               element={
-                <News setProgress={this.setProgress}
+                <News setProgress={this.setProgress} apiKey={this.apiKey}
                   key="general"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -39,7 +40,7 @@ export default class App extends Component {
               exact
               path="/business"
               element={
-                <News setProgress={this.setProgress}
+                <News setProgress={this.setProgress} apiKey={this.apiKey}
                   key="business"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -51,7 +52,7 @@ export default class App extends Component {
               exact
               path="/entertainment"
               element={
-                <News setProgress={this.setProgress}
+                <News setProgress={this.setProgress} apiKey={this.apiKey}
                   key="entertainment"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -63,7 +64,7 @@ export default class App extends Component {
               exact
               path="/health"
               element={
-                <News setProgress={this.setProgress}
+                <News setProgress={this.setProgress} apiKey={this.apiKey}
                   key="health"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -75,7 +76,7 @@ export default class App extends Component {
               exact
               path="/science"
               element={
-                <News setProgress={this.setProgress}
+                <News setProgress={this.setProgress} apiKey={this.apiKey}
                   key="science"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -87,7 +88,7 @@ export default class App extends Component {
               exact
               path="/sports"
               element={
-                <News setProgress={this.setProgress}
+                <News setProgress={this.setProgress} apiKey={this.apiKey}
                   key="sports"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
@@ -99,7 +100,7 @@ export default class App extends Component {
               exact
               path="/technology"
               element={
-                <News setProgress={this.setProgress}
+                <News setProgress={this.setProgress} apiKey={this.apiKey}
                   key="technology"
                   numOfArticlesPerPage={this.numOfArticlesPerPage}
                   country="in"
