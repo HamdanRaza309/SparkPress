@@ -7,7 +7,7 @@ import LoadingBar from 'react-top-loading-bar'
 const App = () => {
   const numOfArticlesPerPage = 12;
   const apiKey = process.env.REACT_APP_NEWS_APIKEY;
-
+  // eslint-disable-next-line
   const [progress, setProgress] = useState(0);
 
 

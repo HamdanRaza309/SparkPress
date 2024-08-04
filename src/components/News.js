@@ -14,7 +14,6 @@ const News = (props) => {
   const [loading, setLoading] = useState(false)
   const [page, setPage] = useState(1)
   const [totalResults, setTotalResults] = useState(0)
-  document.title = `${capitalizeFirstLetter(props.category)} - SparkPress - Stay informed`
 
 
   const updateNews = async () => {
@@ -34,7 +33,9 @@ const News = (props) => {
   }
 
   useEffect(() => {
+    document.title = `${capitalizeFirstLetter(props.category)} - SparkPress - Stay informed`
     updateNews();
+    // eslint-disable-next-line
   }, [])
 
   const fetchMoreData = async () => {
@@ -53,7 +54,7 @@ const News = (props) => {
   return (
     <div className="container">
       <h1 style={{ padding: "80px 0px 20px 0px" }}>
-        SparkPress - <span style={{ color: "red" }}>{capitalizeFirstLetter(props.category)} Hot Topics</span>
+        SparkPress - <span style={{ color: "red" }}>Hot Topics for {capitalizeFirstLetter(props.category)}</span>
       </h1>
       <InfiniteScroll
         style={{ overflow: "hidden" }}

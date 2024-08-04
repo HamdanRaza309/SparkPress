@@ -72,7 +72,7 @@ const NewsItem = (props) => {
             </p> */}
 
           <a href={newsUrl} target="blank" className="btn btn-sm btn-dark">
-            Read More
+            Full Coverage
           </a>
         </div>
       </div>
